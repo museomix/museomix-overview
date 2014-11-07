@@ -1,4 +1,6 @@
-<html>
+<?php
+include('config.php');
+?><html>
 	<head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
@@ -10,6 +12,8 @@
 	</head>
 	<body>
 		<div class="overviewMain">
+					<h1 style="color:#FFF"><?php echo _('Museomix overview'); ?></h1>
+
 			<div class='container1'>
 			<div class="logo"><img src="assets/museilogo.png"></div>
 				<?php 
@@ -18,16 +22,15 @@
 						echo "<a href='./view.php?userId=$x'>";
 						echo "<div class='collumn col$x'>";
 						$alt=1;
-						for ($y=1; $y<=8; $y++) {
+						for ($y=1; $y<=7; $y++) {
 
 							
 						  	if($y==1){
-						  		$itemValue = file_get_contents("teamData/teamData/team$x/item5.txt");
+						  		$itemValue = file_get_contents("teamData/teamData/team$x/team.txt");
 						  		echo "<div class='overviewLine overviewTeamName'>
 						  		<div class='overviewValue2'>$itemValue</div></div>
 						  		<div class='divider'><img src='assets/divider.png'></div>";
 						  	} else {
-						  		if($y!==6){
 						  			echo "<div class='rowcontainer'>";
 						  			$temp = $y-1;
 						  			$itemValue = file_get_contents("teamData/teamData/team$x/item$temp.txt");
@@ -42,7 +45,7 @@
 						  	} else {
 						  		$alt=1;
 						  	}
-						  		}
+						  		
 
 						  	}
 
@@ -61,16 +64,15 @@
 						echo "<a href='./index.php?userId=$x'>";
 						echo "<div class='collumn col$x'>";
 						$alt=1;
-						for ($y=1; $y<=8; $y++) {
+						for ($y=1; $y<=7; $y++) {
 						  	echo "<div class='rowcontainer'>";
 
 						  	if($y==1){
-						  		$itemValue = file_get_contents("teamData/teamData/team$x/item5.txt");
+						  		$itemValue = file_get_contents("teamData/teamData/team$x/team.txt");
 						  		echo "<div class='overviewLine overviewTeamName'>
 						  		<div class='overviewValue2'>$itemValue</div></div>
 						  		<div class='divider'><img src='assets/divider.png'></div>";
 						  	} else {
-						  		if($y!==6){
 						  			$temp = $y-1;
 						  			$itemValue = file_get_contents("teamData/teamData/team$x/item$temp.txt");
 						  			if(strlen($itemValue)==0){
@@ -83,7 +85,7 @@
 						  	} else {
 						  		$alt=1;
 						  	}
-						  		}
+						  		
 
 						  	}
 						  	echo "</div>";
@@ -101,7 +103,7 @@
 				var funki =  function(){
 					location.reload();
 				}
-				setInterval(function(){funki()}, 5000);
+				setInterval(function(){funki()}, 50000);
 		</script>
 	</script>
 </html>
