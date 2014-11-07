@@ -15,7 +15,7 @@
 				<?php 
 					$counter = 0;
 					for ($x=1; $x<4; $x++) {
-						echo "<a href='http://www.clevberger.com/museomix/index.php?userId=$x'>";
+						echo "<a href='./view.php?userId=$x'>";
 						echo "<div class='collumn col$x'>";
 						$alt=1;
 						for ($y=1; $y<=8; $y++) {
@@ -58,7 +58,7 @@
 				<?php 
 					$counter = 0;
 					for ($x=4; $x<8; $x++) {
-						echo "<a href='http://www.clevberger.com/museomix/index.php?userId=$x'>";
+						echo "<a href='./index.php?userId=$x'>";
 						echo "<div class='collumn col$x'>";
 						$alt=1;
 						for ($y=1; $y<=8; $y++) {
