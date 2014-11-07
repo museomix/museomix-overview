@@ -6,6 +6,8 @@ $locale = 'fr_FR.utf8';
 if (isset($GET['lang']))
 	$locale = $_GET['lang'];
 putenv('LANG='.$locale);
+$lang = explode('.', $locale);
+$lang = $lang[0];
 setlocale(LC_ALL, $locale);
 
 $domain = 'overview';

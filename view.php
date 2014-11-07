@@ -1,5 +1,6 @@
 <?php
 include('config.php');
+global $lang;
 ?><html>
 	<head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -12,31 +13,32 @@ include('config.php');
 	</head>
 	<body>
 		<div class="main">
-			<div><a href="./index.php">Go to overview</a></div>
+			<div><a href="./index.php"><?php echo _('Go to overview'); ?></a></div>
 			<div>
 			<?php
 				
 				$userId = $_GET["userId"];
-				
+		 		$itemVal = file_get_contents("teamData/teamData/team$userId/team.txt");
+				echo "	
+		 				 	<div class='hexagon hex5'>
+								<img src='assets/hexx5.png' class='hexImg'></img>
+								<div><form id='formteam' method='post' class='hexInputName'>
+										<textarea maxlength='40' class='value txtareaspec' name='valueteam' id='fieldteam' type='text'  onchange='updateInput(\'team\')'>$itemVal</textarea>
+									</form>
+								</div>
+							</div>
+						";
 				for ($x=1; $x<=7; $x++) {
 					if (isset($_POST["value$x"])){
 
 		  				$file = "teamData/teamData/team$userId/item$x.txt";	
 						file_put_contents($file, $_POST["value$x"],  LOCK_EX);
 	   				}
-					$titelValue = file_get_contents("teamData/Titles/Title$x.txt");
+					$titelValue = file_get_contents("teamData/Titles/".$lang."/Title$x.txt");
 		 			$itemVal = file_get_contents("teamData/teamData/team$userId/item$x.txt");
 		 				
 					if($x==5){
- 						echo "	
-		 				 	<div class='hexagon hex$x'>
-								<img src='assets/hexx$x.png' class='hexImg'></img>
-								<div><form id='form$x' method='post' class='hexInputName'>
-										<textarea maxlength='40' class='value txtareaspec' name='value$x' id='field$x' type='text'  onchange='updateInput($x)'>$itemVal</textarea>
-									</form>
-								</div>
-							</div>
-						";
+						continue;
 					} else {
 						 echo "	
 		 				 	<div class='hexagon hex$x'>

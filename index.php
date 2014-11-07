@@ -22,7 +22,7 @@ include('config.php');
 						echo "<a href='./view.php?userId=$x'>";
 						echo "<div class='collumn col$x'>";
 						$alt=1;
-						for ($y=1; $y<=7; $y++) {
+						for ($y=1; $y<=8; $y++) {
 
 							
 						  	if($y==1){
@@ -61,10 +61,10 @@ include('config.php');
 				<?php 
 					$counter = 0;
 					for ($x=4; $x<8; $x++) {
-						echo "<a href='./index.php?userId=$x'>";
+						echo "<a href='./view.php?userId=$x'>";
 						echo "<div class='collumn col$x'>";
 						$alt=1;
-						for ($y=1; $y<=7; $y++) {
+						for ($y=1; $y<=8; $y++) {
 						  	echo "<div class='rowcontainer'>";
 
 						  	if($y==1){
