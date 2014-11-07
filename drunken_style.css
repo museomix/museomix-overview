@@ -1,0 +1,309 @@
+html { 
+/*  background: url(assets/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+.container1{
+	float:left;
+}
+.container2{
+	float:left;
+	margin-top: 30px;
+}
+.overviewMain{
+	
+	margin-left: -50px;
+	width: 1158px;
+	margin: 0 auto;
+	
+}
+.logo{
+	width: 250px;
+float: left;
+margin-top: 30px;
+margin-left: 42px;
+margin-right: 18px;
+width: 200px;
+}
+.main {
+position: relative;
+/* top: 50%; */
+/* left: 50%; */
+/* margin-top: -50px; */
+margin-left: -50px;
+/* width: 100px; */
+/* height: 100px; */
+width: 582px;
+margin: 0 auto;
+height: 600px;
+}
+
+.divider {
+	opacity: .5;
+	margin-top: 5px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+body {
+	background-color: #000;
+	opacity: 1;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+.hexInput {
+    background-color: transparent;
+    border: 0px solid;
+    height: 8
+    0px;
+    width: 160px;
+    color: #CCC;
+    font-size: 20px;
+    height: 10em; 
+   
+}
+
+.hexInputName {
+    background-color: transparent;
+    border: 0px solid;
+    height: 8
+    0px;
+    width: 160px;
+    color: #fff;
+    font-size: 22px;
+    height: 10em; 
+   
+}
+
+.hexagon{
+	opacity: 1;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	position:absolute;
+	width:230px;
+	height:200px; 
+}
+
+.hexImg{
+	width:230px;
+	height:200px; 
+}
+
+.hex1{
+	top:100px;
+	left:0px;
+}
+
+.hex2{
+	top:0px;
+	left:178px;
+}
+
+.hex3{	
+	top:100px;
+	left:355px;
+}
+
+.hex4{
+	top:304px;
+	left:0px;
+}
+
+
+
+.hex6{
+	top:304px;
+	left:355px;
+}
+.hex5{
+	top:202px;
+	left:178px;
+	color: #fff;
+	font-size: 22px;
+}
+
+.hex7{
+	top:404px;
+	left:178px;
+}
+.alt1{
+	opacity: 1;
+}
+.alt2{
+	opacity: .6;
+}
+.collumn{
+	opacity: 1;
+	font-family: 'Open Sans', sans-serif;
+	color: #aaaaaa;
+	float:left;
+	margin-left: 30px;
+}
+
+.rowcontainer{
+	margin-top: 10;
+}
+
+.overviewTeamName{
+	font-size: 22px;
+	color: #fff;
+	margin-left: 30px;
+}
+
+.col1{
+	left:250px;
+}
+
+.col2{
+	left:500px;
+}
+
+.col3{
+	left:750px;
+}
+
+.col4{
+	left:0px;
+}
+
+.col5{
+	left:250px;
+}
+
+.col6{
+	left:500px;
+}
+
+.col7{
+	left:750px;
+}
+
+.tit {
+opacity: .4;
+position: absolute;
+width: 230px;
+text-align: center;
+top: 35px;
+color:#000;
+}
+
+.txtarea {
+	color: #fff;
+opacity: 0.7;
+text-overflow: ellipsis;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+position: absolute;
+width: 150px;
+height: 80px;
+top: 66px;
+left: 40px;
+resize: none;
+background-color: transparent;
+font-size: 14px;
+border: none;
+overflow: auto;
+outline: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+}
+.txtareaspec {
+opacity: 0.8;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+position: absolute;
+width: 150px;
+height: 150px;
+top: 60px;
+left: 40px;
+resize: none;
+background-color: transparent;
+font-size: 22px;
+border: none;
+overflow: auto;
+outline: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+color: #fff;
+}
+
+.value{ 
+
+}
+
+.bullet{
+	width:20px;
+	margin-top: 2px;
+	float: left;
+	margin-right: 10px;
+}
+
+.bulletImg{
+	width:20px;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #fff;
+}
+.overviewValue2{	
+	float: left;
+	width: 200px;  
+	left:30px;
+	text-overflow: ellipsis;
+	 white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+   white-space: nowrap;
+overflow: hidden;
+}
+.overviewValue{	
+	float: left;
+	width: 200px;  
+	left:30px;
+	text-overflow: ellipsis;
+	 white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+   margin-bottom: 8px;
+   white-space: nowrap;
+overflow: hidden;
+}
+.overviewLine{
+	margin-top: 10px;
+}
+.qmark{
+position: absolute;
+left: 98px;
+top: 92px;
+opacity: .2;
+}
+}
