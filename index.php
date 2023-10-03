@@ -4,8 +4,7 @@ include('config.php');
 	<head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-		<SCRIPT LANGUAGE="JavaScript" SRC="js/jquery.js"></SCRIPT>
-		<link rel="stylesheet" type="text/css" href="drunken_style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>		<link rel="stylesheet" type="text/css" href="drunken_style.css">
 		<SCRIPT LANGUAGE="JavaScript" SRC="js/core.js"></SCRIPT>
 		<SCRIPT LANGUAGE="JavaScript" SRC="js/JSTweener.js"></SCRIPT>
 		<SCRIPT LANGUAGE="JavaScript" SRC="js/Team.js"></SCRIPT>
